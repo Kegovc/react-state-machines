@@ -66,9 +66,9 @@ const bookingMachine = createMachine({
       ...fillCountries,
     },
     tickets: {
-      // after:{
-      //   5000: "initial"
-      // },
+      after:{
+        5000: "initial"
+      },
       on: {
         FINISH: "initial",
       },
